@@ -23,6 +23,7 @@
         configuration.server = @"https://instant-gram.herokuapp.com/parse";
     }];
     
+    [Parse initializeWithConfiguration:config];
     return YES;
 }
 
