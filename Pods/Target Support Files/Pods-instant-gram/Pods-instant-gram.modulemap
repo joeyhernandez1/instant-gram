@@ -1,0 +1,6 @@
+framework module Pods_instant_gram {
+  umbrella header "Pods-instant-gram-umbrella.h"
+
+  export *
+  module * { export * }
+}

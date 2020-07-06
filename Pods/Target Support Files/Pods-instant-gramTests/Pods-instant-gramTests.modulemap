@@ -1,0 +1,6 @@
+framework module Pods_instant_gramTests {
+  umbrella header "Pods-instant-gramTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
