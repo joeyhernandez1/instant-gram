@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4E39AB4A24B3D3160095FF86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB4924B3D3160095FF86 /* AppDelegate.m */; };
+		4E39AB4D24B3D3160095FF86 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB4C24B3D3160095FF86 /* SceneDelegate.m */; };
+		4E39AB5024B3D3160095FF86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB4F24B3D3160095FF86 /* ViewController.m */; };
+		4E39AB5324B3D3160095FF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E39AB5124B3D3160095FF86 /* Main.storyboard */; };
+		4E39AB5524B3D3170095FF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E39AB5424B3D3170095FF86 /* Assets.xcassets */; };
+		4E39AB5824B3D3170095FF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E39AB5624B3D3170095FF86 /* LaunchScreen.storyboard */; };
+		4E39AB5B24B3D3170095FF86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB5A24B3D3170095FF86 /* main.m */; };
+		4E39AB6524B3D3170095FF86 /* instant_gramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB6424B3D3170095FF86 /* instant_gramTests.m */; };
+		4E39AB7024B3D3170095FF86 /* instant_gramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB6F24B3D3170095FF86 /* instant_gramUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4E39AB6124B3D3170095FF86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E39AB3D24B3D3160095FF86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E39AB4424B3D3160095FF86;
+			remoteInfo = "instant-gram";
+		};
+		4E39AB6C24B3D3170095FF86 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4E39AB3D24B3D3160095FF86 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4E39AB4424B3D3160095FF86;
+			remoteInfo = "instant-gram";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4E39AB4524B3D3160095FF86 /* instant-gram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "instant-gram.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E39AB4824B3D3160095FF86 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4E39AB4924B3D3160095FF86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4E39AB4B24B3D3160095FF86 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
+		4E39AB4C24B3D3160095FF86 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
+		4E39AB4E24B3D3160095FF86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		4E39AB4F24B3D3160095FF86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		4E39AB5224B3D3160095FF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4E39AB5424B3D3170095FF86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4E39AB5724B3D3170095FF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4E39AB5924B3D3170095FF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E39AB5A24B3D3170095FF86 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4E39AB6024B3D3170095FF86 /* instant-gramTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "instant-gramTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E39AB6424B3D3170095FF86 /* instant_gramTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = instant_gramTests.m; sourceTree = "<group>"; };
+		4E39AB6624B3D3170095FF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E39AB6B24B3D3170095FF86 /* instant-gramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "instant-gramUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E39AB6F24B3D3170095FF86 /* instant_gramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = instant_gramUITests.m; sourceTree = "<group>"; };
+		4E39AB7124B3D3170095FF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4E39AB4224B3D3160095FF86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E39AB5D24B3D3170095FF86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E39AB6824B3D3170095FF86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E39AB3C24B3D3160095FF86 = {
+			isa = PBXGroup;
+			children = (
+				4E39AB4724B3D3160095FF86 /* instant-gram */,
+				4E39AB6324B3D3170095FF86 /* instant-gramTests */,
+				4E39AB6E24B3D3170095FF86 /* instant-gramUITests */,
+				4E39AB4624B3D3160095FF86 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4E39AB4624B3D3160095FF86 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4E39AB4524B3D3160095FF86 /* instant-gram.app */,
+				4E39AB6024B3D3170095FF86 /* instant-gramTests.xctest */,
+				4E39AB6B24B3D3170095FF86 /* instant-gramUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4E39AB4724B3D3160095FF86 /* instant-gram */ = {
+			isa = PBXGroup;
+			children = (
+				4E39AB4824B3D3160095FF86 /* AppDelegate.h */,
+				4E39AB4924B3D3160095FF86 /* AppDelegate.m */,
+				4E39AB4B24B3D3160095FF86 /* SceneDelegate.h */,
+				4E39AB4C24B3D3160095FF86 /* SceneDelegate.m */,
+				4E39AB4E24B3D3160095FF86 /* ViewController.h */,
+				4E39AB4F24B3D3160095FF86 /* ViewController.m */,
+				4E39AB5124B3D3160095FF86 /* Main.storyboard */,
+				4E39AB5424B3D3170095FF86 /* Assets.xcassets */,
+				4E39AB5624B3D3170095FF86 /* LaunchScreen.storyboard */,
+				4E39AB5924B3D3170095FF86 /* Info.plist */,
+				4E39AB5A24B3D3170095FF86 /* main.m */,
+			);
+			path = "instant-gram";
+			sourceTree = "<group>";
+		};
+		4E39AB6324B3D3170095FF86 /* instant-gramTests */ = {
+			isa = PBXGroup;
+			children = (
+				4E39AB6424B3D3170095FF86 /* instant_gramTests.m */,
+				4E39AB6624B3D3170095FF86 /* Info.plist */,
+			);
+			path = "instant-gramTests";
+			sourceTree = "<group>";
+		};
+		4E39AB6E24B3D3170095FF86 /* instant-gramUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4E39AB6F24B3D3170095FF86 /* instant_gramUITests.m */,
+				4E39AB7124B3D3170095FF86 /* Info.plist */,
+			);
+			path = "instant-gramUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4E39AB4424B3D3160095FF86 /* instant-gram */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E39AB7424B3D3170095FF86 /* Build configuration list for PBXNativeTarget "instant-gram" */;
+			buildPhases = (
+				4E39AB4124B3D3160095FF86 /* Sources */,
+				4E39AB4224B3D3160095FF86 /* Frameworks */,
+				4E39AB4324B3D3160095FF86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "instant-gram";
+			productName = "instant-gram";
+			productReference = 4E39AB4524B3D3160095FF86 /* instant-gram.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4E39AB5F24B3D3170095FF86 /* instant-gramTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E39AB7724B3D3170095FF86 /* Build configuration list for PBXNativeTarget "instant-gramTests" */;
+			buildPhases = (
+				4E39AB5C24B3D3170095FF86 /* Sources */,
+				4E39AB5D24B3D3170095FF86 /* Frameworks */,
+				4E39AB5E24B3D3170095FF86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E39AB6224B3D3170095FF86 /* PBXTargetDependency */,
+			);
+			name = "instant-gramTests";
+			productName = "instant-gramTests";
+			productReference = 4E39AB6024B3D3170095FF86 /* instant-gramTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4E39AB6A24B3D3170095FF86 /* instant-gramUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4E39AB7A24B3D3170095FF86 /* Build configuration list for PBXNativeTarget "instant-gramUITests" */;
+			buildPhases = (
+				4E39AB6724B3D3170095FF86 /* Sources */,
+				4E39AB6824B3D3170095FF86 /* Frameworks */,
+				4E39AB6924B3D3170095FF86 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4E39AB6D24B3D3170095FF86 /* PBXTargetDependency */,
+			);
+			name = "instant-gramUITests";
+			productName = "instant-gramUITests";
+			productReference = 4E39AB6B24B3D3170095FF86 /* instant-gramUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4E39AB3D24B3D3160095FF86 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = joeyrhernandez1;
+				TargetAttributes = {
+					4E39AB4424B3D3160095FF86 = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					4E39AB5F24B3D3170095FF86 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 4E39AB4424B3D3160095FF86;
+					};
+					4E39AB6A24B3D3170095FF86 = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = 4E39AB4424B3D3160095FF86;
+					};
+				};
+			};
+			buildConfigurationList = 4E39AB4024B3D3160095FF86 /* Build configuration list for PBXProject "instant-gram" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4E39AB3C24B3D3160095FF86;
+			productRefGroup = 4E39AB4624B3D3160095FF86 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4E39AB4424B3D3160095FF86 /* instant-gram */,
+				4E39AB5F24B3D3170095FF86 /* instant-gramTests */,
+				4E39AB6A24B3D3170095FF86 /* instant-gramUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4E39AB4324B3D3160095FF86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E39AB5824B3D3170095FF86 /* LaunchScreen.storyboard in Resources */,
+				4E39AB5524B3D3170095FF86 /* Assets.xcassets in Resources */,
+				4E39AB5324B3D3160095FF86 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E39AB5E24B3D3170095FF86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E39AB6924B3D3170095FF86 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4E39AB4124B3D3160095FF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E39AB5024B3D3160095FF86 /* ViewController.m in Sources */,
+				4E39AB4A24B3D3160095FF86 /* AppDelegate.m in Sources */,
+				4E39AB5B24B3D3170095FF86 /* main.m in Sources */,
+				4E39AB4D24B3D3160095FF86 /* SceneDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E39AB5C24B3D3170095FF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E39AB6524B3D3170095FF86 /* instant_gramTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4E39AB6724B3D3170095FF86 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4E39AB7024B3D3170095FF86 /* instant_gramUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4E39AB6224B3D3170095FF86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E39AB4424B3D3160095FF86 /* instant-gram */;
+			targetProxy = 4E39AB6124B3D3170095FF86 /* PBXContainerItemProxy */;
+		};
+		4E39AB6D24B3D3170095FF86 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4E39AB4424B3D3160095FF86 /* instant-gram */;
+			targetProxy = 4E39AB6C24B3D3170095FF86 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4E39AB5124B3D3160095FF86 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E39AB5224B3D3160095FF86 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4E39AB5624B3D3170095FF86 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4E39AB5724B3D3170095FF86 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4E39AB7224B3D3170095FF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		4E39AB7324B3D3170095FF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4E39AB7524B3D3170095FF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42M4A2VLF8;
+				INFOPLIST_FILE = "instant-gram/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joeyrhernandez1.instant-gram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4E39AB7624B3D3170095FF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42M4A2VLF8;
+				INFOPLIST_FILE = "instant-gram/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joeyrhernandez1.instant-gram";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4E39AB7824B3D3170095FF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42M4A2VLF8;
+				INFOPLIST_FILE = "instant-gramTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joeyrhernandez1.instant-gramTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/instant-gram.app/instant-gram";
+			};
+			name = Debug;
+		};
+		4E39AB7924B3D3170095FF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42M4A2VLF8;
+				INFOPLIST_FILE = "instant-gramTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joeyrhernandez1.instant-gramTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/instant-gram.app/instant-gram";
+			};
+			name = Release;
+		};
+		4E39AB7B24B3D3170095FF86 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42M4A2VLF8;
+				INFOPLIST_FILE = "instant-gramUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joeyrhernandez1.instant-gramUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "instant-gram";
+			};
+			name = Debug;
+		};
+		4E39AB7C24B3D3170095FF86 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 42M4A2VLF8;
+				INFOPLIST_FILE = "instant-gramUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.joeyrhernandez1.instant-gramUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "instant-gram";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4E39AB4024B3D3160095FF86 /* Build configuration list for PBXProject "instant-gram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E39AB7224B3D3170095FF86 /* Debug */,
+				4E39AB7324B3D3170095FF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E39AB7424B3D3170095FF86 /* Build configuration list for PBXNativeTarget "instant-gram" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E39AB7524B3D3170095FF86 /* Debug */,
+				4E39AB7624B3D3170095FF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E39AB7724B3D3170095FF86 /* Build configuration list for PBXNativeTarget "instant-gramTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E39AB7824B3D3170095FF86 /* Debug */,
+				4E39AB7924B3D3170095FF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4E39AB7A24B3D3170095FF86 /* Build configuration list for PBXNativeTarget "instant-gramUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4E39AB7B24B3D3170095FF86 /* Debug */,
+				4E39AB7C24B3D3170095FF86 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4E39AB3D24B3D3160095FF86 /* Project object */;
+}
