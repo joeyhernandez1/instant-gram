@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -11,13 +11,13 @@
 		1CF6C1853588FFD06BB123CD /* Pods_instant_gramTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B70B1AE129F5075CFA75683D /* Pods_instant_gramTests.framework */; };
 		4E39AB4A24B3D3160095FF86 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB4924B3D3160095FF86 /* AppDelegate.m */; };
 		4E39AB4D24B3D3160095FF86 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB4C24B3D3160095FF86 /* SceneDelegate.m */; };
-		4E39AB5024B3D3160095FF86 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB4F24B3D3160095FF86 /* ViewController.m */; };
 		4E39AB5324B3D3160095FF86 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E39AB5124B3D3160095FF86 /* Main.storyboard */; };
 		4E39AB5524B3D3170095FF86 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E39AB5424B3D3170095FF86 /* Assets.xcassets */; };
 		4E39AB5824B3D3170095FF86 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E39AB5624B3D3170095FF86 /* LaunchScreen.storyboard */; };
 		4E39AB5B24B3D3170095FF86 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB5A24B3D3170095FF86 /* main.m */; };
 		4E39AB6524B3D3170095FF86 /* instant_gramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB6424B3D3170095FF86 /* instant_gramTests.m */; };
 		4E39AB7024B3D3170095FF86 /* instant_gramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB6F24B3D3170095FF86 /* instant_gramUITests.m */; };
+		4E39AB8024B53A330095FF86 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB7F24B53A330095FF86 /* LoginViewController.m */; };
 		DDA09F4AE7151BEF99C9514E /* Pods_instant_gram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C911EAB425ADE57CEC1A4D33 /* Pods_instant_gram.framework */; };
 /* End PBXBuildFile section */
 
@@ -46,8 +46,6 @@
 		4E39AB4924B3D3160095FF86 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		4E39AB4B24B3D3160095FF86 /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		4E39AB4C24B3D3160095FF86 /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		4E39AB4E24B3D3160095FF86 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		4E39AB4F24B3D3160095FF86 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		4E39AB5224B3D3160095FF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4E39AB5424B3D3170095FF86 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E39AB5724B3D3170095FF86 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -59,6 +57,8 @@
 		4E39AB6B24B3D3170095FF86 /* instant-gramUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "instant-gramUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E39AB6F24B3D3170095FF86 /* instant_gramUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = instant_gramUITests.m; sourceTree = "<group>"; };
 		4E39AB7124B3D3170095FF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E39AB7E24B53A330095FF86 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		4E39AB7F24B53A330095FF86 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		A041F76E16AA80300E288B97 /* Pods-instant-gramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instant-gramTests.release.xcconfig"; path = "Target Support Files/Pods-instant-gramTests/Pods-instant-gramTests.release.xcconfig"; sourceTree = "<group>"; };
 		B70B1AE129F5075CFA75683D /* Pods_instant_gramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instant_gramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C911EAB425ADE57CEC1A4D33 /* Pods_instant_gram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instant_gram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,12 +121,11 @@
 		4E39AB4724B3D3160095FF86 /* instant-gram */ = {
 			isa = PBXGroup;
 			children = (
+				4E39AB7D24B539920095FF86 /* ViewControllers */,
 				4E39AB4824B3D3160095FF86 /* AppDelegate.h */,
 				4E39AB4924B3D3160095FF86 /* AppDelegate.m */,
 				4E39AB4B24B3D3160095FF86 /* SceneDelegate.h */,
 				4E39AB4C24B3D3160095FF86 /* SceneDelegate.m */,
-				4E39AB4E24B3D3160095FF86 /* ViewController.h */,
-				4E39AB4F24B3D3160095FF86 /* ViewController.m */,
 				4E39AB5124B3D3160095FF86 /* Main.storyboard */,
 				4E39AB5424B3D3170095FF86 /* Assets.xcassets */,
 				4E39AB5624B3D3170095FF86 /* LaunchScreen.storyboard */,
@@ -154,6 +153,15 @@
 			path = "instant-gramUITests";
 			sourceTree = "<group>";
 		};
+		4E39AB7D24B539920095FF86 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				4E39AB7E24B53A330095FF86 /* LoginViewController.h */,
+				4E39AB7F24B53A330095FF86 /* LoginViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
 		50B10DD7002E518875D4AA63 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -174,7 +182,6 @@
 				D863424C793ABF17BFCB1D8D /* Pods-instant-gramTests.debug.xcconfig */,
 				A041F76E16AA80300E288B97 /* Pods-instant-gramTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -416,7 +423,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4E39AB5024B3D3160095FF86 /* ViewController.m in Sources */,
+				4E39AB8024B53A330095FF86 /* LoginViewController.m in Sources */,
 				4E39AB4A24B3D3160095FF86 /* AppDelegate.m in Sources */,
 				4E39AB5B24B3D3170095FF86 /* main.m in Sources */,
 				4E39AB4D24B3D3160095FF86 /* SceneDelegate.m in Sources */,
