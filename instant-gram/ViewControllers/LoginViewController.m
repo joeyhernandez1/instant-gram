@@ -44,6 +44,7 @@
             [self showAlert:error.localizedDescription];
         } else {
             NSLog(@"User registered successfully");
+            [self performSegueWithIdentifier:@"loginSegue" sender:nil];
         }
     }];
 }
@@ -67,6 +68,7 @@
             [self showAlert:error.localizedDescription];
         } else {
             NSLog(@"User logged in successfully");
+            [self performSegueWithIdentifier:@"loginSegue" sender:nil];
         }
     }];
 }
