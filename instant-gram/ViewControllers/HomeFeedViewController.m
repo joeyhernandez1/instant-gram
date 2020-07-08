@@ -20,27 +20,14 @@
 
 @property (strong, nonatomic) IBOutlet UITableView *tableView;
 @property (strong, nonatomic) NSMutableArray *posts;
+@property (strong, nonatomic) UIRefreshControl *refreshControl;
 
 @end
 
 @implementation HomeFeedViewController
 
 -(void)viewWillAppear:(BOOL)animated {
-    // construct query
-    PFQuery *query = [PFQuery queryWithClassName:@"Post"];
-    [query orderByDescending:@"createdAt"];
-    query.limit = 20;
-    [query includeKey:@"author"];
-    // fetch data asynchronously
-    [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
-        if (posts != nil) {
-            // do something with the array of object returned by the call
-            self.posts = (NSMutableArray *) posts;
-        } else {
-            NSLog(@"%@", error.localizedDescription);
-        }
-        [self.tableView reloadData];
-    }];
+    [self.tableView reloadData];
 }
 
 - (void)viewDidLoad {
@@ -48,7 +35,30 @@
     self.tableView.dataSource = self;
     self.tableView.delegate = self;
     self.tableView.rowHeight = UITableViewAutomaticDimension;
-    [self.tableView reloadData];
+    [self queryDataBase];
+    
+    self.refreshControl = [[UIRefreshControl alloc] init];
+    [self.refreshControl addTarget:self
+                         action:@selector(queryDataBase)
+                         forControlEvents:UIControlEventValueChanged];
+    [self.tableView insertSubview:self.refreshControl atIndex:0];
+}
+
+-(void)queryDataBase {
+    PFQuery *query = [PFQuery queryWithClassName:@"Post"];
+    [query orderByDescending:@"createdAt"];
+    query.limit = 20;
+    [query includeKey:@"author"];
+    
+    [query findObjectsInBackgroundWithBlock:^(NSArray *posts, NSError *error) {
+        if (posts != nil) {
+            self.posts = (NSMutableArray *) posts;
+        } else {
+            NSLog(@"%@", error.localizedDescription);
+        }
+        [self.tableView reloadData];
+        [self.refreshControl endRefreshing];
+    }];
 }
 
 - (IBAction)onTapLogout:(id)sender {
@@ -88,6 +98,7 @@
 
 -(void)didPost:(Post *)post {
     [self.posts insertObject:post atIndex:0];
+    [self queryDataBase];
     [self.tableView reloadData];
 }
 
