@@ -19,6 +19,9 @@
 		4E39AB7024B3D3170095FF86 /* instant_gramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB6F24B3D3170095FF86 /* instant_gramUITests.m */; };
 		4E39AB8024B53A330095FF86 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB7F24B53A330095FF86 /* LoginViewController.m */; };
 		4E39AB8324B54E5F0095FF86 /* HomeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB8224B54E5F0095FF86 /* HomeFeedViewController.m */; };
+		4E39AB8724B576F10095FF86 /* ImagePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB8624B576F10095FF86 /* ImagePickerViewController.m */; };
+		4E39AB8B24B578DE0095FF86 /* PostTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB8A24B578DE0095FF86 /* PostTableViewCell.m */; };
+		4E39AB8E24B579930095FF86 /* Post.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB8D24B579930095FF86 /* Post.m */; };
 		DDA09F4AE7151BEF99C9514E /* Pods_instant_gram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C911EAB425ADE57CEC1A4D33 /* Pods_instant_gram.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +65,12 @@
 		4E39AB7F24B53A330095FF86 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 		4E39AB8124B54E5F0095FF86 /* HomeFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeFeedViewController.h; sourceTree = "<group>"; };
 		4E39AB8224B54E5F0095FF86 /* HomeFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeFeedViewController.m; sourceTree = "<group>"; };
+		4E39AB8524B576F10095FF86 /* ImagePickerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImagePickerViewController.h; sourceTree = "<group>"; };
+		4E39AB8624B576F10095FF86 /* ImagePickerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImagePickerViewController.m; sourceTree = "<group>"; };
+		4E39AB8924B578DE0095FF86 /* PostTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PostTableViewCell.h; sourceTree = "<group>"; };
+		4E39AB8A24B578DE0095FF86 /* PostTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PostTableViewCell.m; sourceTree = "<group>"; };
+		4E39AB8C24B579930095FF86 /* Post.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Post.h; sourceTree = "<group>"; };
+		4E39AB8D24B579930095FF86 /* Post.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Post.m; sourceTree = "<group>"; };
 		A041F76E16AA80300E288B97 /* Pods-instant-gramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instant-gramTests.release.xcconfig"; path = "Target Support Files/Pods-instant-gramTests/Pods-instant-gramTests.release.xcconfig"; sourceTree = "<group>"; };
 		B70B1AE129F5075CFA75683D /* Pods_instant_gramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instant_gramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C911EAB425ADE57CEC1A4D33 /* Pods_instant_gram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instant_gram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -124,6 +133,8 @@
 		4E39AB4724B3D3160095FF86 /* instant-gram */ = {
 			isa = PBXGroup;
 			children = (
+				4E39AB8824B578A90095FF86 /* Models */,
+				4E39AB8424B5760D0095FF86 /* Views */,
 				4E39AB7D24B539920095FF86 /* ViewControllers */,
 				4E39AB4824B3D3160095FF86 /* AppDelegate.h */,
 				4E39AB4924B3D3160095FF86 /* AppDelegate.m */,
@@ -163,8 +174,28 @@
 				4E39AB7F24B53A330095FF86 /* LoginViewController.m */,
 				4E39AB8124B54E5F0095FF86 /* HomeFeedViewController.h */,
 				4E39AB8224B54E5F0095FF86 /* HomeFeedViewController.m */,
+				4E39AB8524B576F10095FF86 /* ImagePickerViewController.h */,
+				4E39AB8624B576F10095FF86 /* ImagePickerViewController.m */,
 			);
 			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		4E39AB8424B5760D0095FF86 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4E39AB8924B578DE0095FF86 /* PostTableViewCell.h */,
+				4E39AB8A24B578DE0095FF86 /* PostTableViewCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4E39AB8824B578A90095FF86 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4E39AB8C24B579930095FF86 /* Post.h */,
+				4E39AB8D24B579930095FF86 /* Post.m */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		50B10DD7002E518875D4AA63 /* Frameworks */ = {
@@ -431,8 +462,11 @@
 				4E39AB8324B54E5F0095FF86 /* HomeFeedViewController.m in Sources */,
 				4E39AB8024B53A330095FF86 /* LoginViewController.m in Sources */,
 				4E39AB4A24B3D3160095FF86 /* AppDelegate.m in Sources */,
+				4E39AB8B24B578DE0095FF86 /* PostTableViewCell.m in Sources */,
 				4E39AB5B24B3D3170095FF86 /* main.m in Sources */,
+				4E39AB8724B576F10095FF86 /* ImagePickerViewController.m in Sources */,
 				4E39AB4D24B3D3160095FF86 /* SceneDelegate.m in Sources */,
+				4E39AB8E24B579930095FF86 /* Post.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
