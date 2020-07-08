@@ -18,6 +18,7 @@
 		4E39AB6524B3D3170095FF86 /* instant_gramTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB6424B3D3170095FF86 /* instant_gramTests.m */; };
 		4E39AB7024B3D3170095FF86 /* instant_gramUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB6F24B3D3170095FF86 /* instant_gramUITests.m */; };
 		4E39AB8024B53A330095FF86 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB7F24B53A330095FF86 /* LoginViewController.m */; };
+		4E39AB8324B54E5F0095FF86 /* HomeFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E39AB8224B54E5F0095FF86 /* HomeFeedViewController.m */; };
 		DDA09F4AE7151BEF99C9514E /* Pods_instant_gram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C911EAB425ADE57CEC1A4D33 /* Pods_instant_gram.framework */; };
 /* End PBXBuildFile section */
 
@@ -59,6 +60,8 @@
 		4E39AB7124B3D3170095FF86 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4E39AB7E24B53A330095FF86 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		4E39AB7F24B53A330095FF86 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		4E39AB8124B54E5F0095FF86 /* HomeFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HomeFeedViewController.h; sourceTree = "<group>"; };
+		4E39AB8224B54E5F0095FF86 /* HomeFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HomeFeedViewController.m; sourceTree = "<group>"; };
 		A041F76E16AA80300E288B97 /* Pods-instant-gramTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-instant-gramTests.release.xcconfig"; path = "Target Support Files/Pods-instant-gramTests/Pods-instant-gramTests.release.xcconfig"; sourceTree = "<group>"; };
 		B70B1AE129F5075CFA75683D /* Pods_instant_gramTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instant_gramTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C911EAB425ADE57CEC1A4D33 /* Pods_instant_gram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_instant_gram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -158,6 +161,8 @@
 			children = (
 				4E39AB7E24B53A330095FF86 /* LoginViewController.h */,
 				4E39AB7F24B53A330095FF86 /* LoginViewController.m */,
+				4E39AB8124B54E5F0095FF86 /* HomeFeedViewController.h */,
+				4E39AB8224B54E5F0095FF86 /* HomeFeedViewController.m */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -423,6 +428,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E39AB8324B54E5F0095FF86 /* HomeFeedViewController.m in Sources */,
 				4E39AB8024B53A330095FF86 /* LoginViewController.m in Sources */,
 				4E39AB4A24B3D3160095FF86 /* AppDelegate.m in Sources */,
 				4E39AB5B24B3D3170095FF86 /* main.m in Sources */,
