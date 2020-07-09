@@ -13,6 +13,7 @@
 #import "Post.h"
 #import "PostTableViewCell.h"
 #import "ImagePickerViewController.h"
+#import "DetailsViewController.h"
 
 @interface HomeFeedViewController () <UITableViewDelegate,
                                       UITableViewDataSource,
@@ -78,9 +79,19 @@
 }
 
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    UINavigationController *navigationController = [segue destinationViewController];
-    ImagePickerViewController *imagePicker = (ImagePickerViewController *) navigationController.topViewController;
-    imagePicker.delegate = self;
+    if ([segue.identifier isEqualToString:@"composePost"]) {
+        UINavigationController *navigationController = [segue destinationViewController];
+        ImagePickerViewController *imagePicker = (ImagePickerViewController *) navigationController.topViewController;
+        imagePicker.delegate = self;
+    }
+    else if ([segue.identifier isEqualToString:@"detailsView"]) {
+        UITableViewCell *tappedCell = sender;
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:tappedCell];
+        Post *currentPost = self.posts[indexPath.row];
+        DetailsViewController *detailsViewController = [segue destinationViewController];
+        detailsViewController.post = currentPost;
+        [self.tableView deselectRowAtIndexPath:indexPath animated:YES];
+    }
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {

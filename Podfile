@@ -8,7 +8,7 @@ target 'instant-gram' do
   # Pods for instant-gram
   pod 'Parse'
   pod 'Parse/UI'
-
+  pod 'DateTools'
   target 'instant-gramTests' do
     inherit! :search_paths
     # Pods for testing
