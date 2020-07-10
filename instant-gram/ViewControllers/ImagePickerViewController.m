@@ -8,6 +8,7 @@
 
 #import "ImagePickerViewController.h"
 #import "Post.h"
+@import Parse;
 
 @interface ImagePickerViewController () <UIImagePickerControllerDelegate,
                                          UINavigationControllerDelegate>
@@ -26,23 +27,36 @@
 
 -(void) viewWillAppear:(BOOL)animated {
     self.captionField.text = @"";
+    self.navigationItem.rightBarButtonItem.enabled = [self equalsPlaceholder:self.imageView.image];
+}
+
+- (BOOL)equalsPlaceholder:(UIImage *)image2 {
+    NSData *data1 = UIImagePNGRepresentation([UIImage imageNamed:@"image_placeholder"]);
+    NSData *data2 = UIImagePNGRepresentation(image2);
+
+    return !([data1 isEqual:data2]);
+}
+
+- (IBAction)onImageTap:(id)sender {
+    [self pickImage];
 }
 
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info {
     
-    // Get the image captured by the UIImagePickerController
     UIImage *originalImage = info[UIImagePickerControllerOriginalImage];
-    //UIImage *editedImage = info[UIImagePickerControllerEditedImage];
+    UIImage *editedImage = info[UIImagePickerControllerEditedImage];
     
     if (originalImage) {
-        self.imageView.image = originalImage;
-        CGSize size = CGSizeMake(500, 500);
-        [self resizeImage:originalImage withSize:size];
+        CGSize size = CGSizeMake(400, 400);
+        self.imageView.image = [self resizeImage:originalImage withSize:size];
+        self.navigationItem.rightBarButtonItem.enabled = [self equalsPlaceholder:originalImage];
+    }
+    else if (editedImage) {
+        CGSize size = CGSizeMake(400, 400);
+        self.imageView.image = [self resizeImage:originalImage withSize:size];
+        self.navigationItem.rightBarButtonItem.enabled = [self equalsPlaceholder:editedImage];
     }
 
-    // Do something with the images (based on your use case)
-    
-    // Dismiss UIImagePickerController to go back to your original view controller
     [self dismissViewControllerAnimated:YES completion:nil];
 }
 
@@ -76,6 +90,8 @@
         }
         else {
             NSLog(@"Post successful!");
+            Post *newPost = [Post createPost:self.imageView.image withCaption:self.captionField.text];
+            [self.delegate didPost:newPost];
             [self dismissViewControllerAnimated:YES completion:nil];
         }
     }];

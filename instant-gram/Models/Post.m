@@ -34,6 +34,17 @@
     [newPost saveInBackgroundWithBlock: completion];
 }
 
++ (Post *)createPost: ( UIImage * _Nullable )image withCaption: ( NSString * _Nullable ) caption {
+    Post *newPost = [Post new];
+    newPost.image = [self getPFFileFromImage:image];
+    newPost.author = [PFUser currentUser];
+    newPost.caption = caption;
+    newPost.likeCount = @(0);
+    newPost.commentCount = @(0);
+    
+    return newPost;
+}
+
 + (PFFileObject *)getPFFileFromImage: (UIImage * _Nullable)image {
  
     if (!image) {

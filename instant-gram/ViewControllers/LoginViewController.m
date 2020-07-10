@@ -20,7 +20,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.passwordField.secureTextEntry = YES;
 }
 
 - (IBAction)OnTapRegister:(id)sender {
@@ -45,6 +45,8 @@
         } else {
             NSLog(@"User registered successfully");
             [self performSegueWithIdentifier:@"loginSegue" sender:nil];
+            self.usernameField.text = @"";
+            self.passwordField.text = @"";
         }
     }];
 }
