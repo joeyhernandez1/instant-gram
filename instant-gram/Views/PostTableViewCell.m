@@ -25,7 +25,6 @@
     _post = post;
     self.postImage.file = post[@"image"];
     [self.postImage loadInBackground];
-
 }
 
 @end
